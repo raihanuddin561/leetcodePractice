@@ -1,8 +1,10 @@
 package main;
 
+import algoStudyPlan.Solution704;
 import leetcodeSolutions.Solution1;
 import leetcodeSolutions.Solution1_1;
 import leetcodeSolutions.Solution2;
+import leetcodeSolutions.Solution3;
 
 public class Result {
     public static void main(String[] args) {
@@ -21,5 +23,13 @@ public class Result {
 //        lList.head.next = secondeNode;
 //        secondeNode.next = thirdNode;
 //        s2.addTwoNumbers()
+      /*  Solution3 s3 = new Solution3();
+       int l =  s3.lengthOfLongestSubstring("dvdf");
+        System.out.println("l: "+l);*/
+        Solution704 solution704 = new Solution704();
+        int[] in = {-1,0,3,5,9,12};
+
+       int index =  solution704.search(in,0);
+        System.out.println(index);
     }
 }
