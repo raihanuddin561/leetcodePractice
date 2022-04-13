@@ -5,7 +5,7 @@ public class StairCase {
         // Write your code here
         StringBuilder sb = new StringBuilder();
         for(int i = n-1;i>=0;i--){
-            sb.append()
+           // sb.append()
         }
 
     }

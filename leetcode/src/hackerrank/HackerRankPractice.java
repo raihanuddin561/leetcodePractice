@@ -1,4 +1,7 @@
-package hackerrank.algorithm;
+package hackerrank;
+
+import hackerrank.algorithm.StairCase;
+import hackerrank.prevWrong.Student;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +21,9 @@ public class HackerRankPractice {
         lists.add(k);
         System.out.println("Difference>: "+ DiagonalDifference.diagonalDifference(lists));*/
        // PlusMinusRatio.plusMinus(List.of(-4, 3, -9, 0, 4, 1));
-        StairCase.staircase(6);
+       // StairCase.staircase(6);
+        int[] scores = {55,80};
+        Student st = new Student("Raihan","Uddin",1319,scores);
+        System.out.println(st.calculate());
     }
 }
