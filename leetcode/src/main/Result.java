@@ -47,5 +47,7 @@ public class Result {
         System.out.println("Median: "+result);*/
        /*int sum = SimpleArraySum.simpleArraySum(List.of(1,2,3));
         System.out.println("Sum: "+sum);*/
+        Solution5 s5 = new Solution5();
+        System.out.println( s5.longestPalindrome("abcba"));
     }
 }
