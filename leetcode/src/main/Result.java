@@ -47,7 +47,18 @@ public class Result {
         System.out.println("Median: "+result);*/
        /*int sum = SimpleArraySum.simpleArraySum(List.of(1,2,3));
         System.out.println("Sum: "+sum);*/
-        Solution5 s5 = new Solution5();
-        System.out.println( s5.longestPalindrome("abcba"));
+       /* Solution5 s5 = new Solution5();
+        System.out.println( s5.longestPalindrome("abcba"));*/
+        /*Solution6 s6 = new Solution6();
+       String s = s6.convert("PAYPALISHIRING",4);
+        System.out.println(s);*/
+
+        /*Solution7 s7 = new Solution7();
+       int a = s7.reverse(1534236469);
+        System.out.println(a);*/
+       /* Solution8 s8 = new Solution8();
+        System.out.println(s8.myAtoi("  0000000000012345678"));*/
+        Solution9 s9 = new Solution9();
+        System.out.println(s9.isPalindrome(1234567899));
     }
 }
