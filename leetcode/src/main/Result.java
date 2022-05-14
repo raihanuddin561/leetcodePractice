@@ -5,6 +5,7 @@ import algoStudyPlan.Solution704;
 import hackerrank.algorithm.SimpleArraySum;
 import leetcodeSolutions.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Result {
@@ -58,7 +59,21 @@ public class Result {
         System.out.println(a);*/
        /* Solution8 s8 = new Solution8();
         System.out.println(s8.myAtoi("  0000000000012345678"));*/
-        Solution9 s9 = new Solution9();
-        System.out.println(s9.isPalindrome(1234567899));
+        /*Solution9 s9 = new Solution9();
+        System.out.println(s9.isPalindrome(1234567899));*/
+        /*Solution10 s10 = new Solution10();
+        System.out.println(s10.isMatch("ab",".*"));*/
+       /* Solution11 s11 = new Solution11();
+        //int[] arr = {1,8,6,2,5,4,8,3,7};
+        int[] arr = {1,1};
+        System.out.println("max area:"+s11.maxArea(arr));*/
+      /*  Solution15 s15 = new Solution15();
+        int[] arr = {-1,0,1,2,-1,-4};
+        System.out.println( s15.threeSum(arr));*/
+        Solution16 s16 = new Solution16();
+       // int[] arr = {1,2,4,8,16,32,64,128}; //82
+      //  int[] arr = {-1,2,1,-4}; //1
+        int[] arr = {-1,0,1,1,55} ;//3
+        s16.threeSumClosest(arr,3);
     }
 }
