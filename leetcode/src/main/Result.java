@@ -70,10 +70,12 @@ public class Result {
       /*  Solution15 s15 = new Solution15();
         int[] arr = {-1,0,1,2,-1,-4};
         System.out.println( s15.threeSum(arr));*/
-        Solution16 s16 = new Solution16();
+     /*   Solution16 s16 = new Solution16();
        // int[] arr = {1,2,4,8,16,32,64,128}; //82
       //  int[] arr = {-1,2,1,-4}; //1
         int[] arr = {-1,0,1,1,55} ;//3
-        s16.threeSumClosest(arr,3);
+        s16.threeSumClosest(arr,3);*/
+        Solution17 s17 = new Solution17();
+        s17.letterCombinations("2345");
     }
 }
