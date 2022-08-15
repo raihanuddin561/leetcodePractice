@@ -75,7 +75,20 @@ public class Result {
       //  int[] arr = {-1,2,1,-4}; //1
         int[] arr = {-1,0,1,1,55} ;//3
         s16.threeSumClosest(arr,3);*/
-        Solution17 s17 = new Solution17();
-        s17.letterCombinations("2345");
+       /* Solution17 s17 = new Solution17();
+        System.out.println(s17.letterCombinations("1"));*/
+      //  int[] arr = {1,0,-1,0,-2,2};
+        //[-2,-1,-1,1,1,2,2],0
+        //nums = [2,2,2,2,2], target = 8
+        /*
+        * [-3,-2,-1,0,0,1,2,3], 0
+        *answer: [[-3,-2,2,3],[-3,-1,1,3],[-3,0,0,3],[-3,0,1,2],[-2,-1,0,3],[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+        * [[-2, -1, 0, 3], [-2, 0, 0, 2], [-3, -1, 1, 3], [-3, 0, 0, 3], [-2, -1, 1, 2], [-3, -2, 2, 3]]
+        *  size = 6
+         */
+
+        int[] arr = {2,2,2,2,2};
+        Solution18 s18 = new Solution18();
+        s18.fourSum(arr,8);
     }
 }
