@@ -87,8 +87,40 @@ public class Result {
         *  size = 6
          */
 
+/*
         int[] arr = {2,2,2,2,2};
         Solution18 s18 = new Solution18();
         s18.fourSum(arr,8);
+*/
+        /*
+        Input: nums = [0,2,1,5,3,4]
+Output: [0,1,2,4,5,3]
+         */
+/*
+        int[] arr = {0,2,1,5,3,4};
+        Solution1920 s1920  = new Solution1920();
+        s1920.buildArray(arr);
+*/
+
+       /* int[] arr = {1,2,1};
+        Solution1929 s1920  = new Solution1929();
+        s1920.getConcatenation(arr);*/
+        /*int[] arr= {1,2,3,4};
+        Solution1480 s1480 = new Solution1480();
+        s1480.runningSum(arr);*/
+
+        /*
+        Input: accounts = [[1,2,3],[3,2,1]]
+Output: 6
+[[2,8,7],[7,1,3],[1,9,5]]
+         */
+        /*int[][] arr = {{2,8,7},{7,1,3},{1,9,5}};
+        Solution1672 s1672 = new Solution1672();
+        s1672.maximumWealth(arr);*/
+        Solution1470 s1470 = new Solution1470();
+        int[] arr = {1,2,3,4,4,3,2,1};
+       // int[] arr = {2,5,1,3,4,7};
+        s1470.shuffle(arr,4);
+
     }
 }
