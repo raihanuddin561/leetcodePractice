@@ -117,10 +117,26 @@ Output: 6
         /*int[][] arr = {{2,8,7},{7,1,3},{1,9,5}};
         Solution1672 s1672 = new Solution1672();
         s1672.maximumWealth(arr);*/
-        Solution1470 s1470 = new Solution1470();
+       /* Solution1470 s1470 = new Solution1470();
         int[] arr = {1,2,3,4,4,3,2,1};
        // int[] arr = {2,5,1,3,4,7};
-        s1470.shuffle(arr,4);
+        s1470.shuffle(arr,4);*/
+       /* Solution1431 solution1431 = new Solution1431();
+        int[] arr = {2,3,5,1,3};
+        solution1431.kidsWithCandies(arr,3);*/
+       /* Solution1512 solution1512 = new Solution1512();
+        int[] arr = {1,1,1,1};
+        solution1512.numIdenticalPairs(arr);*/
+        /*Solution1365 solution1365 = new Solution1365();
+        int[] arr = {6,5,4,8};
+        solution1365.smallerNumbersThanCurrent(arr);*/
+       /* Solution1389 solution1389=new Solution1389();
+        int[] nums ={0,1,2,3,4},index={0,1,2,2,1};
+        solution1389.createTargetArray(nums,index);*/
+        Solution1832 solution1832 = new Solution1832();
+        solution1832.checkIfPangram("onrcsnlxckptsxffbyswujpamfltvmdoxovggepknmtacrjkkorjgvgtgaiaudspnpxkwikevmjeephhiyvnoymjwjfopovscbefecnoytjxfwasabwohqujwowmakpyuuqvgfab");
+       // solution1832.checkIfPangram("thequickbrownfoxjumpsoverthelazydog");
+
 
     }
 }
