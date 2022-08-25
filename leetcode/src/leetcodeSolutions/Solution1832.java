@@ -5,7 +5,15 @@ import java.util.stream.IntStream;
 
 public class Solution1832 {
     public boolean checkIfPangram(String sentence) {
-        char[] chars = sentence.toUpperCase().toCharArray();
+
+        boolean flag = false;
+        for(char i='a';i<='z';i++){
+            if(sentence.indexOf(i)>=0){
+                flag = true;
+            }else return false;
+        }
+return flag;
+        /* char[] chars = sentence.toUpperCase().toCharArray();
         int[] nums=IntStream.range(0,chars.length).map(i->chars[i]).sorted().distinct().toArray();
         if(nums.length<26) return false;
         for (int i= 65,j=0;i<91;i++,j++){
@@ -14,6 +22,6 @@ public class Solution1832 {
                 return false;
             }
         }
-        return true;
+        return true;*/
     }
 }

@@ -1,6 +1,5 @@
 package main;
 
-import algoStudyPlan.Solution34;
 import algoStudyPlan.Solution704;
 import hackerrank.algorithm.SimpleArraySum;
 import leetcodeSolutions.*;
@@ -133,10 +132,107 @@ Output: 6
        /* Solution1389 solution1389=new Solution1389();
         int[] nums ={0,1,2,3,4},index={0,1,2,2,1};
         solution1389.createTargetArray(nums,index);*/
-        Solution1832 solution1832 = new Solution1832();
-        solution1832.checkIfPangram("onrcsnlxckptsxffbyswujpamfltvmdoxovggepknmtacrjkkorjgvgtgaiaudspnpxkwikevmjeephhiyvnoymjwjfopovscbefecnoytjxfwasabwohqujwowmakpyuuqvgfab");
+      //  Solution1832 solution1832 = new Solution1832();
+       // solution1832.checkIfPangram("onrcsnlxckptsxffbyswujpamfltvmdoxovggepknmtacrjkkorjgvgtgaiaudspnpxkwikevmjeephhiyvnoymjwjfopovscbefecnoytjxfwasabwohqujwowmakpyuuqvgfab");
        // solution1832.checkIfPangram("thequickbrownfoxjumpsoverthelazydog");
+/*
+Input: items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]],
+ ruleKey = "color", ruleValue = "silver"
+Output: 1
+Explanation: There is only one item matching the given rule, which is
+ ["computer","silver","lenovo"].
+ */
+       /* Solution1773 solution1773 = new Solution1773();
+        List<List<String>> items = new ArrayList<>();
+        List<String>item1 = List.of("phone","blue","pixel");
+        List<String>item2 = List.of("computer","silver","lenovo");
+        List<String>item3 = List.of("phone","gold","iphone");
+        items.add(item1);
+        items.add(item2);
+        items.add(item3);
+        solution1773.countMatches(items,"color","silver");*/
 
+        /*Solution1732 solution1732 = new Solution1732();
+        int[] gain = {-5,1,5,0,-7};
+        solution1732.largestAltitude(gain);*/
+       /* Solution832 solution832 = new Solution832();
+        int[][] image= {{1,1,0},{1,0,1},{0,0,0}};
+        solution832.flipAndInvertImage(image);*/
+        /*
+        Input: mat = [[1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1],
+              [1,1,1,1]]
+Output: 8
+         */
+        /*Solution1572 solution1572 = new Solution1572();
+        int[][] mat = {{1,2,3},{4,5,6},{7,8,9}};
+       // int[][] mat = {{1,1,1,1},{1,1,1,1},{1,1,1,1},{1,1,1,1}};
+      //  int[][] mat = {{5}};
+        solution1572.diagonalSum(mat);*/
+
+        /*
+        Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[1,4,7],[2,5,8],[3,6,9]]
+Example 2:
+
+Input: matrix = [[1,2,3],[4,5,6]]
+Output: [[1,4],[2,5],[3,6]]
+         */
+       /* Solution867 solution867 = new Solution867();
+        int[][] m={{1,2,3},{4,5,6}};
+        solution867.transpose(m);*/
+        /*
+        [9,9,9,9,9,9,9,9,9,9]
+1
+         */
+       /* Solution989 solution989 = new Solution989();
+        int[] arr={9,9,9,9,9,9,9,9,9,9};
+      //  int[] arr={1,2,0,0};
+        int k = 1;
+        solution989.addToArrayForm(arr,k);*/
+        /*
+        Input: logs = [[1993,1999],[2000,2010]]
+Output: 1993
+Explanation: The maximum population is 1, and 1993 is the earliest year with this population.
+Example 2:
+
+Input: logs = [[1950,1961],[1960,1971],[1970,1981]]
+Output: 1960
+Explanation:
+[[1982,1998],[2013,2042],[2010,2035],[2022,2050],[2047,2048]]
+[[2025,2041],[1988,2007],[2003,2046],[2045,2049],[2025,2027],
+[2014,2040],[2014,2027],[2011,2027],[1972,2019]]
+         */
+
+       /* Solution1854 solution1854 = new Solution1854();
+       // int[][] arr = {{2025,2041},{1988,2007},{2003,2046},{2045,2049},{2025,2027},
+       //         {2014,2040},{2014,2027},{1972,2019} };
+       *//* int[][] arr = {{1982,1998},{2013,2042},{2010,2035},{2022,2050},{2047,2048}};
+        //int[][] arr = {{1950,1961},{1960,1971},{1970,1981}};
+        solution1854.maximumPopulation(arr);*//*
+        Solution34 solution34 = new Solution34();
+        int[] arr = {5,7,7,8,8,10};
+        solution34.searchRange(arr,7);*/
+        Solution1886 solution1886 = new Solution1886();
+        /*int[][] mat = {{0,1},{1,0}};
+        int[][] target = {{1,0},{0,1}};*/
+       /* int[][] mat = {{1,1},{0,1}};
+        int[][] target = {{1,1},{1,0}};*/
+        /*int[][] mat = {{0,0,0},{0,1,0},{1,1,1}};
+        int[][] target = {{1,1,1},{0,1,0},{0,0,0}};
+        solution1886.findRotation(mat,target);*/
+       /* Solution1304 solution1304 = new Solution1304();
+        solution1304.sumZero(5);*/
+        /*Solution1380 solution1380 = new Solution1380();
+        int[][] arr = {{3,7,8},{9,11,13},{15,16,17}};
+        solution1380.luckyNumbers(arr);*/
+        Solution26 solution26 = new Solution26();
+        int[] arr = {1,1,1,2,2};
+       // int[] arr = {1,2,3};
+      //  int[] arr = {0,0,1,1,1,2,2,3,3,4};
+        solution26.removeDuplicates(arr);
+        solution26.test();
 
     }
 }
