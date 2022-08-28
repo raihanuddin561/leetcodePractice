@@ -5,6 +5,7 @@ import hackerrank.algorithm.SimpleArraySum;
 import leetcodeSolutions.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Result {
@@ -214,7 +215,7 @@ Explanation:
         Solution34 solution34 = new Solution34();
         int[] arr = {5,7,7,8,8,10};
         solution34.searchRange(arr,7);*/
-        Solution1886 solution1886 = new Solution1886();
+      //  Solution1886 solution1886 = new Solution1886();
         /*int[][] mat = {{0,1},{1,0}};
         int[][] target = {{1,0},{0,1}};*/
        /* int[][] mat = {{1,1},{0,1}};
@@ -227,12 +228,106 @@ Explanation:
         /*Solution1380 solution1380 = new Solution1380();
         int[][] arr = {{3,7,8},{9,11,13},{15,16,17}};
         solution1380.luckyNumbers(arr);*/
-        Solution26 solution26 = new Solution26();
+       /* Solution26 solution26 = new Solution26();
         int[] arr = {1,1,1,2,2};
        // int[] arr = {1,2,3};
       //  int[] arr = {0,0,1,1,1,2,2,3,3,4};
         solution26.removeDuplicates(arr);
-        solution26.test();
+        solution26.test();*/
+
+        /*Solution80 solution80 = new Solution80();
+        int[] arr = {1,1,1,2,2,2,3,3};
+        // int[] arr = {1,1,1,1,2,2,3};
+       //  int[] arr = {1,1,2};
+        // int[] arr = {1,2,3};
+
+       //   int[] arr = {0,0,1,1,1,1,2,3,3};
+       //   int[] arr = {0,0,1,1,1,2,2,3,3,4,4};
+        solution80.removeDuplicates(arr);*/
+
+       /* Solution27 solution27 = new Solution27();
+        int[] arr = {2};
+       // int[] arr = {3,3};
+        //int[] arr = {0,1,2,2,3,0,4,2};
+        solution27.removeElement(arr,3);*/
+
+       /* Solution283 solution283 = new Solution283();
+       //int[] arr = {0,0,1};
+        int[] arr = {0,1,0,3,12};
+        solution283.moveZeroes(arr);*/
+
+
+       /* Solution33 solution33 = new Solution33();
+        //int[] arr = {4,5,6,7,0,1,2};
+        int[] arr = {3,1};
+       // int[] arr = {1};
+
+        System.out.println(solution33.search(arr,0));*/
+
+       /* Solution153 solution153 = new Solution153();
+        int[] arr = {4,5,6,7,0,1,2};
+        System.out.println(solution153.findMin(arr));*/
+/*
+        Solution154 solution154 =new Solution154();
+       // int[] arr = {0,1,4,4,5,6,7};
+       // int[] arr = {2,2,2,0,1};
+       // int[] arr = {3,3,3,3,3,3,3,3,1,3};
+     //  int[] arr = {3,1,1,1,1};
+        //int[] arr = {1,1};
+        int[] arr = {1,3,5};
+        System.out.println(solution154.findMin(arr));*/
+/*
+[0,1,2,2,2,2]
+2
+ */
+      /*  Solution81 solution81 = new Solution81();
+        int[] arr = {0,1,2,2,2,2};
+        //int[] arr = {5,1,3};
+        //int[] arr = {1,3};
+        //int[] arr = {2,5,6,0,0,1,2};
+        System.out.println(solution81.search(arr,2));*/
+
+       /* Solution566 solution566 = new Solution566();
+        int[][] arr = {{1,2},{3,4}};
+        solution566.matrixReshape(arr,1,4);*/
+
+        /*Solution287 solution287 = new Solution287();
+        int[] arr = {3,1,3,4,2};
+       // int[] arr = {1,3,4,2,2};
+        System.out.println( solution287.findDuplicate(arr));*/
+
+       /* Solution41 solution41 = new Solution41();
+        int[] arr = {-1,1,2,3,4};
+        //int[] arr = {7,8,9,11,12};
+       // int[] arr = {1,2,0};
+        System.out.println(solution41.firstMissingPositive(arr));*/
+
+       /* Solution448 solution448 = new Solution448();
+        int[] arr = {1,1};
+        //int[] arr = {4,3,2,7,8,2,3,1};
+        System.out.println(solution448.findDisappearedNumbers(arr));*/
+
+        /*Solution442 solution442 = new Solution442();
+        int[] arr = {5,4,6,7,9,3,10,9,5,6};
+       // int[] arr = {1,1,2};
+       // int[] arr = {4,3,2,7,8,2,3,1};
+        System.out.println(solution442.findDuplicates(arr));*/
+
+ /*Solution1998 solution1998 = new Solution1998();
+        //int[] arr = {7,21,3};
+        int[] arr = {10,3,9,6,8};
+       // int[] arr = {5,2,6,2};
+      //  int[] arr = {10,5,9,3,15};
+        solution1998.gcdSort(arr);*/
+/*
+Input: nums = [1,2], operations = [[1,3],[2,1],[3,2]]
+* */
+        Solution2295 solution2295 = new Solution2295();
+        int[] arr = {1,2};
+        int[][] ops = {{1,3},{2,1},{3,2}};
+        /*int[] arr = {1,2,4,6};
+        int[][] ops = {{1,3},{4,7},{6,1}};*/
+        System.out.println(Arrays.toString(solution2295.arrayChange(arr,ops)));
 
     }
 }
