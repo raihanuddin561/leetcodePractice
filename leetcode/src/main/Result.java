@@ -322,12 +322,45 @@ Explanation:
 /*
 Input: nums = [1,2], operations = [[1,3],[2,1],[3,2]]
 * */
-        Solution2295 solution2295 = new Solution2295();
+        /*Solution2295 solution2295 = new Solution2295();
         int[] arr = {1,2};
         int[][] ops = {{1,3},{2,1},{3,2}};
-        /*int[] arr = {1,2,4,6};
-        int[][] ops = {{1,3},{4,7},{6,1}};*/
-        System.out.println(Arrays.toString(solution2295.arrayChange(arr,ops)));
+        *//*int[] arr = {1,2,4,6};
+        int[][] ops = {{1,3},{4,7},{6,1}};*//*
+        System.out.println(Arrays.toString(solution2295.arrayChange(arr,ops)));*/
+/*
 
+[1,3,5]
+4
+Output
+1
+Expected
+2
+ */
+      /*  Solution35 solution35 = new Solution35();
+       // int[] arr = {1,1};
+       // int[] arr = {1,3,5};
+        int[] arr = {1,3,5,6};
+        System.out.println(solution35.searchInsert(arr,2));*/
+
+        /*Solution66 solution66 = new Solution66();
+        int[] arr = {8,9,9,9};
+       // int[] arr = {4,3,2,1};
+        System.out.println(Arrays.toString(solution66.plusOne(arr)));
+        */
+      /* Solution43 solution43 = new Solution43();
+        System.out.println(solution43.multiply("9","9"));
+        System.out.println(solution43.multiply("3","2"));
+        System.out.println(solution43.multiply("123","146"));
+        System.out.println(solution43.multiply("8999","6555"));*/
+
+        /*Solution48 solution48 = new Solution48();
+        int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
+        solution48.rotate(arr);*/
+
+        Solution162 solution162 = new Solution162();
+        int[] arr= {1,2,1,3,5,6,4};
+       // int[] arr= {1,2,3,1};
+        System.out.println(solution162.findPeakElement(arr));
     }
 }
