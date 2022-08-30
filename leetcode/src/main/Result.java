@@ -358,9 +358,28 @@ Expected
         int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
         solution48.rotate(arr);*/
 
-        Solution162 solution162 = new Solution162();
+       /* Solution162 solution162 = new Solution162();
         int[] arr= {1,2,1,3,5,6,4};
        // int[] arr= {1,2,3,1};
-        System.out.println(solution162.findPeakElement(arr));
+        System.out.println(solution162.findPeakElement(arr));*/
+/*
+[3,5,3,2,0]
+0
+ */
+       /* Solution1095 solution1095 = new Solution1095();
+       // int[] arr = {1,5,2};
+        int[] arr = {3,5,3,2,0};
+        //int[] arr = {0,5,3,1};
+       // int[] arr = {1,2,3,4,5,3,1};
+        System.out.println(solution1095.findInMountainArray(3,arr));*/
+
+      /*  Solution540 solution540 = new Solution540();
+       // int[] arr={1,1,2,3,3,4,4,8,8};
+        int[] arr={3,3,7,7,10,11,11};
+        System.out.println(solution540.singleNonDuplicate(arr));*/
+        Solution1671 solution1671 = new Solution1671();
+       // int[] arr= {1,3,1};
+        int[] arr= {2,1,1,5,6,2,3,1};
+        System.out.println(solution1671.minimumMountainRemovals(arr));
     }
 }
