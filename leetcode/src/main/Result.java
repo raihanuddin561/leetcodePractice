@@ -377,9 +377,15 @@ Expected
        // int[] arr={1,1,2,3,3,4,4,8,8};
         int[] arr={3,3,7,7,10,11,11};
         System.out.println(solution540.singleNonDuplicate(arr));*/
-        Solution1671 solution1671 = new Solution1671();
+      /*  Solution1671 solution1671 = new Solution1671();
        // int[] arr= {1,3,1};
-        int[] arr= {2,1,1,5,6,2,3,1};
-        System.out.println(solution1671.minimumMountainRemovals(arr));
+        int[] arr= {4,3,2,1,1,2,3,1};
+       // int[] arr= {2,1,1,5,6,2,3,1};
+      //  int[] arr= {1,16,84,9,29,71,86,79,72,12};
+       // int[] arr= {1,2,3,4,4,3,2,1};
+        System.out.println(solution1671.minimumMountainRemovals(arr));*/
+
+        Solution69 solution69 = new Solution69();
+        System.out.println(solution69.mySqrt(25));
     }
 }
