@@ -385,7 +385,52 @@ Expected
        // int[] arr= {1,2,3,4,4,3,2,1};
         System.out.println(solution1671.minimumMountainRemovals(arr));*/
 
-        Solution69 solution69 = new Solution69();
-        System.out.println(solution69.mySqrt(25));
+       /* Solution69 solution69 = new Solution69();
+        System.out.println(solution69.mySqrt(25));*/
+
+        /*
+        "fvokzonyhukpwbnkomdianhirsvdulhsfseaqzktupyeverfsd"
+[26,30,38,2,41,10,8,44,19,4,13,28,21,35,23,16]
+["vd","hsfs","ktu","ok","pye","kp","hu","verfs","ia","zon","bnk","ul","nh","aqz","irs","om"]
+["h","gdlf","nl","sr","xhn","ax","arf","ifuax","a","mk","vwqe","fdl","n","miyr","ibh","den"]
+         */
+
+      /*  Solution833 solution833 = new Solution833();
+        *//*
+        "vmokgggqzp"
+[3,5,1]
+["kg","ggq","mo"]
+["s","so","bfr"]
+         *//*
+        String s ="vmokgggqzp";
+        int[] indices={3,5,1};
+        String[] sources={"kg","ggq","mo"};
+       // String[] sources={"ab", "ec"};
+        String[] targets = {"s","so","bfr"};
+        *//*String s ="abcd";
+        int[] indices={0,2};
+        String[] sources={"a", "cd"};
+       // String[] sources={"ab", "ec"};
+        String[] targets = {"eee", "ffff"};*//*
+        System.out.println(solution833.findReplaceString(s,indices,sources,targets));*/
+
+        /*Solution88 solution88 = new Solution88();
+       // int[] num1 = {2,0};
+        int[] num1 = {1,2,3,0,0,0};
+        int m=3;
+        int[] num2 = {2,5,6};
+        int n = 3;
+        solution88.merge(num1,m,num2,n);*/
+
+        /*Solution58 solution58 =new Solution58();
+        System.out.println(solution58.lengthOfLastWord(""));
+        */
+
+        Solution917 solution917 = new Solution917();
+        String s=";1yDV";
+      //  String s="a-bC-dEf-ghIj";
+      //  String s="7_28]";
+      //  String s="Test1ng-Leet=code-Q!";
+        System.out.println(solution917.reverseOnlyLetters(s));
     }
 }
