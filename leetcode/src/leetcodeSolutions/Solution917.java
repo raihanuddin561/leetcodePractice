@@ -2,27 +2,39 @@ package leetcodeSolutions;
 
 public class Solution917 {
     public String reverseOnlyLetters(String s) {
-        if(s.length()<1) return "";
-       // char[] chars = s.toCharArray();
+        char[] chars = s.toCharArray();
         int start=0,end=s.length()-1;
         while (start<end){
-            if(checkLetter(s.charAt(start)&&checkLetter(s.charAt(end)&&start<end&&s.charAt(start!=s.charAt(end) {
-                char temp = s.charAt(start);
-                s.setCharAt(start,) = s.charAt(end);
+            if (Character.isLetter(chars[start])&&Character.isLetter(chars[end])){
+                char temp = chars[start];
+                chars[start]=chars[end];
                 chars[end]=temp;
                 start++;
                 end--;
             }else {
-                if(!checkLetter(chars[start])) start++;
-                if(!checkLetter(chars[end])) end--;
+                if(!Character.isLetter(chars[start])) start++;
+                if(!Character.isLetter(chars[end])) end--;
             }
 
         }
-        StringBuilder sb =new StringBuilder();
-        for(char c:chars){
-            sb.append(c);
-        }
-        return sb.toString();
+        return String.valueOf(chars);
+        /*if(s.length()<1) return "";
+        int start=0,end=s.length()-1;
+        while (start<end){
+            if(checkLetter(s.charAt(start))&&checkLetter(s.charAt(end))
+                    &&start<end&&s.charAt(start)!=s.charAt(end)) {
+                char temp = s.charAt(start);
+                s=s.substring(0,start)+s.charAt(end)+s.substring(start+1);
+                s=s.substring(0,end)+temp+s.substring(end+1);
+                start++;
+                end--;
+            }else {
+                if(!checkLetter(s.charAt(start))) start++;
+                if(!checkLetter(s.charAt(end))) end--;
+            }
+
+        }*/
+       // return s;
     }
 
     private boolean checkLetter(char aChar) {

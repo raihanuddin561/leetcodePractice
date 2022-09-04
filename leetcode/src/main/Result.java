@@ -313,12 +313,7 @@ Explanation:
        // int[] arr = {4,3,2,7,8,2,3,1};
         System.out.println(solution442.findDuplicates(arr));*/
 
- /*Solution1998 solution1998 = new Solution1998();
-        //int[] arr = {7,21,3};
-        int[] arr = {10,3,9,6,8};
-       // int[] arr = {5,2,6,2};
-      //  int[] arr = {10,5,9,3,15};
-        solution1998.gcdSort(arr);*/
+
 /*
 Input: nums = [1,2], operations = [[1,3],[2,1],[3,2]]
 * */
@@ -426,11 +421,29 @@ Expected
         System.out.println(solution58.lengthOfLastWord(""));
         */
 
-        Solution917 solution917 = new Solution917();
-        String s=";1yDV";
-      //  String s="a-bC-dEf-ghIj";
+       /* Solution917 solution917 = new Solution917();
+      //  String s=";1yDV";
+        String s="a-bC-dEf-ghIj";
       //  String s="7_28]";
       //  String s="Test1ng-Leet=code-Q!";
-        System.out.println(solution917.reverseOnlyLetters(s));
+        System.out.println(solution917.reverseOnlyLetters(s));*/
+        Solution344 solution344 = new Solution344();
+       // char[] arr={'h','e','l','l','o'};
+       /* char[] arr={'H','a','n','n','a','h'};
+        solution344.reverseString(arr);
+        System.out.println(Arrays.toString(arr));*/
+        /*Solution509 solution509 = new Solution509();
+        System.out.println(solution509.fib(4));*/
+
+
+       /* Solution1998 solution1998 = new Solution1998();
+      //  int[] arr = {7,21,3};
+      // int[] arr = {10,3,9,6,8};
+       // int[] arr = {5,2,6,2};
+        int[] arr = {10,5,9,3,15};
+        solution1998.gcdSort(arr);*/
+
+        Solution125 solution125 = new Solution125();
+        System.out.println( solution125.isPalindrome("0P"));
     }
 }
