@@ -75,8 +75,8 @@ public class Result {
       //  int[] arr = {-1,2,1,-4}; //1
         int[] arr = {-1,0,1,1,55} ;//3
         s16.threeSumClosest(arr,3);*/
-       /* Solution17 s17 = new Solution17();
-        System.out.println(s17.letterCombinations("1"));*/
+        /*Solution17 s17 = new Solution17();
+        System.out.println(s17.letterCombinations("12"));*/
       //  int[] arr = {1,0,-1,0,-2,2};
         //[-2,-1,-1,1,1,2,2],0
         //nums = [2,2,2,2,2], target = 8
@@ -443,7 +443,21 @@ Expected
         int[] arr = {10,5,9,3,15};
         solution1998.gcdSort(arr);*/
 
-        Solution125 solution125 = new Solution125();
-        System.out.println( solution125.isPalindrome("0P"));
+       /* Solution125 solution125 = new Solution125();
+        System.out.println( solution125.isPalindrome("0P"));*/
+
+       /* Solution69 solution69 = new Solution69();
+        //System.out.println(solution69.mySqrt(2147395600));
+        System.out.println(solution69.mySqrt(2147395600));*/
+       // System.out.println(solution69.mySqrt(8));
+
+
+        /*Solution39 solution39 = new Solution39();
+        int[] arr = {2,3,6,7};
+        solution39.combinationSum(arr,7);*/
+
+        Solution28 solution28 = new Solution28();
+        System.out.println(solution28.strStr("leetcode","leeto"));
+      //  System.out.println(solution28.strStr("sadbutsad","sad"));
     }
 }

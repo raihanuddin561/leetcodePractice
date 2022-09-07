@@ -10,11 +10,12 @@ public class Solution17 {
             '7',"pqrs",'8',"tuv",'9',"wxyz"));
     List<String> combination = new ArrayList<>();
     public List<String> letterCombinations(String digits) {
-        if(digits.length()==0) return combination;
+        /*if(digits.length()==0) return combination;
         char[] ch = digits.toCharArray();
         String s = "";
         getCombination(ch,0,s);
-        return combination;
+        return combination;*/
+        return pad("",digits);
     }
 
     private void getCombination(char[] ch, int i, String s) {
@@ -31,5 +32,20 @@ public class Solution17 {
                 System.out.println(s);
             }
         }
+    }
+
+    public List<String> pad(String p,String up){
+        if (up.isEmpty()) {
+            List<String> list = new ArrayList<>();
+            list.add(p);
+            return list;
+        }
+        int digit = up.charAt(0)-'0';
+        List<String> res = new ArrayList<>();
+        for(int i=(digit-1)*3;i<digit*3;i++){
+            char c=(char) ('a'+i);
+            res.addAll(pad(p+c,up.substring(1)));
+        }
+        return res;
     }
 }
