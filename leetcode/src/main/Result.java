@@ -456,8 +456,33 @@ Expected
         int[] arr = {2,3,6,7};
         solution39.combinationSum(arr,7);*/
 
-        Solution28 solution28 = new Solution28();
-        System.out.println(solution28.strStr("leetcode","leeto"));
+       /* Solution28 solution28 = new Solution28();
+        System.out.println(solution28.strStr("leetcode","leeto"));*/
+
       //  System.out.println(solution28.strStr("sadbutsad","sad"));
+
+       /* Solution214 solution214  = new Solution214();
+       // System.out.println(solution214.shortestPalindrome("aabba"));
+        System.out.println(solution214.shortestPalindrome("aaaabbaa"));
+       // System.out.println(solution214.shortestPalindrome("aacecaaa"));
+       // System.out.println(solution214.shortestPalindrome("abcd"));
+        */
+
+
+        /*Solution54 solution54 = new Solution54();
+       int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
+      //  int[][] matrix = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+      //  int[][] matrix = {{3},{2}};
+      //  int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println(solution54.spiralOrder(matrix));*/
+
+       /* Solution83 solution83 = new Solution83();
+        solution83.deleteDuplicates();*/
+
+        Solution189 solution189 = new Solution189();
+        //int[] arr = {-1,-100,3,99};
+        int[] arr = {1,2,3,4,5,6,7};
+        int k=3;
+        solution189.rotate(arr,k);
     }
 }

@@ -87,7 +87,7 @@ Chicago, Winnipeg, Seattle, Montreal, Toronto, Toronto, Chicago, Winnipeg, Seatt
             System.out.println(manager.nextItem());
         }*/
 
-        ArrayList<SushiOrder> request = new ArrayList<>(
+       /* ArrayList<SushiOrder> request = new ArrayList<>(
                 Arrays.asList(
                         new SushiOrder(2,
                                 new ArrayList<>(Arrays.asList(
@@ -117,6 +117,19 @@ Chicago, Winnipeg, Seattle, Montreal, Toronto, Toronto, Chicago, Winnipeg, Seatt
 
         for (int i = 0; i < 4; i++) {
             System.out.println(manager.nextItem());
-        }
+        }*/
+
+
+      //  System.out.println( Challenge.parseCsv("a,b,c\nd,e,f","",""));
+       /* String s="ne,\"two wraps\n" +
+                "onto \"\"two\"\" lines\",three\n" +
+                "4,,6";*/
+       // String s = "1.2.3\n4.5.6";
+        String s = "a $string$ using $ as the quote, multi\n" +
+                "line, \n, " +
+                "1.2, 3, 4";
+      //  String s = "1,\"two was here\",3\n4,5,6";
+       // System.out.println( Challenge.parseCsv("",",","\""));
+        System.out.println( Challenge.parseCsv(s,".","\""));
     }
 }
