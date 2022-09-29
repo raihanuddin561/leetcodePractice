@@ -16,7 +16,9 @@ public class Test {
         listPract.insertLast(2);
         listPract.insertLast(6);*/
         listPract.display();
-        listPract.reorderList();
+        listPract.findMidle();
+        listPract.display();
+        //listPract.reorderList();
        // listPract.deleteMiddle();
        // System.out.println(Arrays.toString(listPract.splitListToParts2(3)));
         //listPract.oddEvenList();

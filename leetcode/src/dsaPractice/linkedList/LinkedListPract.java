@@ -275,6 +275,33 @@ public class LinkedListPract {
         }
         return;
     }
+    public Node findMidle(){
+        Node fast = head;
+        Node slow = head;
+        while (fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        head=slow;
+        return slow;
+    }
+
+    public Node reverse(){
+          if(head==null) return head;
+          Node prev=null;
+          Node curr = head;
+          Node next = curr.next;
+          while (curr!=null){
+              curr.next=prev;
+              prev=curr;
+              curr=next;
+              if(next!=null)
+                next=next.next;
+          }
+          head=prev;
+          return head;
+    }
+
     class Node{
         int val;
         Node next;
