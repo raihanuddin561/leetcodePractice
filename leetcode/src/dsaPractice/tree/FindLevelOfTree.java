@@ -85,6 +85,46 @@ public class FindLevelOfTree {
         }
       //  printLevelOrder(root,h);
     }
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        int h = height(root);
+        List<List<Integer>> lists = new ArrayList<>();
+        boolean direction = true;
+        for(int i =1;i<=h;i++){
+            List<Integer> list = new ArrayList<>();
+            getLevelOrder(root,i,list,direction);
+            if(direction) direction = false;
+            else direction = true;
+            lists.add(list);
+        }
+        return lists;
+    }
+    void getLevelOrder(TreeNode root, int level,List<Integer> list,boolean isLeftToRight){
+        if(root==null) return ;
+        if(level==1) {
+            list.add(root.val);
+        }else if(level>1) {
+            if (isLeftToRight) {
+                if (root.left != null) {
+                    getLevelOrder(root.left, level - 1, list, isLeftToRight);
+                }
+                if (root.right != null) {
+                    getLevelOrder(root.right, level - 1, list, isLeftToRight);
+                }
+            } else {
+                if (root.right != null) {
+                    getLevelOrder(root.right, level - 1, list, isLeftToRight);
+                }
+                if (root.left != null) {
+                    getLevelOrder(root.left, level - 1, list, isLeftToRight);
+                }
+            }
+        }
+    }
+    boolean changeDirection(boolean isLeftToRight){
+        if(isLeftToRight) isLeftToRight=false;
+        else isLeftToRight=true;
+        return isLeftToRight;
+    }
     TreeNode insertWithParent(TreeNode node,int val){
         if(node==null){
             return new TreeNode(val);
@@ -179,6 +219,45 @@ public class FindLevelOfTree {
         }
     }
 
+    int searchIndex(int[] arr,int strt,int end,int val){
+        int i;
+        for( i=strt;i<=end;i++){
+            if(arr[i]==val)return i;
+        }
+        return i;
+    }
+   static int preIndex=0;
+    TreeNode buildTree(int[] in,int[] pre,int inStrt,int inEnd){
+        if(inStrt>inEnd) return null;
+        TreeNode buildNode = new TreeNode(pre[preIndex++]);
+        if(inStrt==inEnd) return buildNode;
+        int inIndex = searchIndex(in,inStrt,inEnd,buildNode.val);
+        buildNode.left = buildTree(in,pre,inStrt,inIndex-1);
+        buildNode.right = buildTree(in,pre,inIndex+1,inEnd);
+        return buildNode;
+    }
+    TreeNode buildTreeFromPost(int[] in,int[] post,int inStrt,int inEnd){
+        if(inStrt>inEnd) return null;
+        TreeNode buildNode = new TreeNode(post[preIndex--]);
+        if(inStrt==inEnd) return buildNode;
+        int inIndex = searchIndex(in,inStrt,inEnd,buildNode.val);
+        buildNode.right = buildTreeFromPost(in,post,inIndex+1,inEnd);
+        buildNode.left = buildTreeFromPost(in,post,inStrt,inIndex-1);
+        return buildNode;
+    }
+    public TreeNode sortedArrayToBST(int[] nums) {
+        return buildTreeFromArr(nums,0,nums.length-1);
+    }
+
+    private TreeNode buildTreeFromArr(int[] nums, int start, int end) {
+        if(start>end) return null;
+        int mid = start+(end-start)/2;
+        TreeNode node = new TreeNode(nums[mid]);
+        node.left = buildTreeFromArr(nums, start,mid-1);
+        node.right = buildTreeFromArr(nums,mid+1,end);
+        return node;
+    }
+
     public static void main(String[] args) {
         FindLevelOfTree tree = new FindLevelOfTree();
        /* TreeNode root = null,temp=null,suc = null,min=null;
@@ -196,13 +275,13 @@ public class FindLevelOfTree {
         }else{
             System.out.println("Inorder successor does not exist");
         }*/
-        tree.root = new TreeNode(2147483647);
+      //  tree.root = new TreeNode(2147483647);
        // tree.root = new TreeNode(5);
       /*  tree.root.left = new TreeNode(4);
         tree.root.right = new TreeNode(6);
         tree.root.right.left=new TreeNode(3);
         tree.root.right.right=new TreeNode(7);*/
-        System.out.println(tree.isValidBST(tree.root));
+       // System.out.println(tree.isValidBST(tree.root));
 
        /* tree.root.left.left = new Node(4);
         tree.root.left.right = new Node(5);*/
@@ -216,6 +295,33 @@ public class FindLevelOfTree {
 
        // System.out.println(tree.isValidBST(root));
        // tree.postOrderTraversalWith2Stack(root);
+       /* tree.root = new TreeNode(3);
+        tree.root.left = new TreeNode(9);
+        tree.root.right = new TreeNode(20);
+        tree.root.right.left=new TreeNode(15);
+        tree.root.right.right=new TreeNode(7);*/
+       /* tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left=new TreeNode(4);
+        tree.root.right.right=new TreeNode(5);
+        tree.zigzagLevelOrder(root);*/
+       /* int[] in = {9,3,15,20,7};
+        int[] pre = {3,9,20,15,7};*/
+        /*int[] in = {-1};
+        int[] pre = {-1};*/
+        /*int[] in = {9,3,15,20,7};
+        int[]post = {9,15,7,20,3};
+        preIndex = in.length-1;
+        tree.postOrderTraversalWith2Stack(tree.buildTreeFromPost(in,post,0,in.length-1));*/
+      // List<Integer> lists= tree.inorderTraversal(tree.buildTree(in,pre,0,in.length-1));
+       /*for (int i:lists){
+           System.out.println(i);
+       }*/
 
+        int[] arr = {0,1,2,3,4,5};
+        //int[] arr = {-10,-3,0,5,9};
+        TreeNode node = tree.sortedArrayToBST(arr);
+        System.out.println(node);
     }
 }
