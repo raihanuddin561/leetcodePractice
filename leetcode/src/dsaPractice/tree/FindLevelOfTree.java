@@ -5,11 +5,11 @@ import java.util.*;
 public class FindLevelOfTree {
     static class TreeNode{
         int val;
-        TreeNode left,right,parent;
+        TreeNode left,right,parent,next;
         public TreeNode(){}
         public TreeNode(int val){
             this.val=val;
-            left=right=parent=null;
+            left=right=parent=next=null;
         }
     }
     static TreeNode root;
@@ -257,6 +257,21 @@ public class FindLevelOfTree {
         node.right = buildTreeFromArr(nums,mid+1,end);
         return node;
     }
+    public TreeNode connect(TreeNode root) {
+        if(root==null) return null;
+        TreeNode left = root.left;
+        TreeNode right = root.right;
+        while(left!=null){
+            left.next = right;
+            left = left.right;
+            right = right.left;
+        }
+        connect(root.left);
+        connect(root.right);
+        return root;
+    }
+
+
 
     public static void main(String[] args) {
         FindLevelOfTree tree = new FindLevelOfTree();
