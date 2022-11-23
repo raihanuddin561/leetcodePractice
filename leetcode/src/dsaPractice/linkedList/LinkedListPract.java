@@ -1,7 +1,7 @@
 package dsaPractice.linkedList;
 
 public class LinkedListPract {
-    private Node head;
+    public Node head;
     private Node tail;
     private int size;
     public LinkedListPract(){
@@ -76,6 +76,13 @@ public class LinkedListPract {
         return val;
   }
     private Node get(int index) {
+        Node node = head;
+        for(int i=0;i<index;i++){
+            node = node.next;
+        }
+        return node;
+    }
+    private Node get(Node head,int index) {
         Node node = head;
         for(int i=0;i<index;i++){
             node = node.next;
@@ -275,6 +282,46 @@ public class LinkedListPract {
         }
         return;
     }
+    public Node swapPairs(Node head) {
+        if(head==null) return head;
+        if(head.next==null) return head;
+        else{
+            Node temp = head;
+            head = head.next;
+            temp.next = head.next;
+            head.next = temp;
+            head.next.next = swapPairs(head.next.next);
+        }
+        return head;
+    }
+    public Node swapNodes(Node head, int k) {
+        Node firstPositionNode = head;
+        Node secondPostionNode = head;
+        Node firstNode = head, secondNode = head;
+        for(int i=0;i<k-1;i++) firstPositionNode = firstPositionNode.next;
+        firstNode = firstPositionNode;
+        while (firstPositionNode.next!=null) {
+            secondPostionNode = secondPostionNode.next;
+            firstPositionNode = firstPositionNode.next;
+        }
+        secondNode = secondPostionNode;
+        int temp = firstNode.val;
+        firstNode.val = secondNode.val;
+        secondNode.val = temp;
+        return head;
+    }
+
+    private int getNodeSize(Node head) {
+        if(head==null) return 0;
+        int counter = 0;
+        Node temp = head;
+        while (temp!=null){
+            counter++;
+            temp=temp.next;
+        }
+        return counter;
+    }
+
     public Node findMidle(){
         Node fast = head;
         Node slow = head;

@@ -16,7 +16,7 @@ public class Test {
         listPract.insertLast(2);
         listPract.insertLast(6);*/
         listPract.display();
-        listPract.findMidle();
+        listPract.swapNodes(listPract.head,2);
         listPract.display();
         //listPract.reorderList();
        // listPract.deleteMiddle();

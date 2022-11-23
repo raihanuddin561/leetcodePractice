@@ -479,10 +479,16 @@ Expected
        /* Solution83 solution83 = new Solution83();
         solution83.deleteDuplicates();*/
 
-        Solution189 solution189 = new Solution189();
+        /*Solution189 solution189 = new Solution189();
         //int[] arr = {-1,-100,3,99};
         int[] arr = {1,2,3,4,5,6,7};
         int k=3;
-        solution189.rotate(arr,k);
+        solution189.rotate(arr,k);*/
+        /*Solution70 solution70 = new Solution70();
+        System.out.println(solution70.climbStairs(4));*/
+        Solution121 solution121 = new Solution121();
+        int[] arr = {1,4,2};
+        //int[] arr = {7,1,5,3,6,4};
+        System.out.println(solution121.maxProfit(arr));
     }
 }
