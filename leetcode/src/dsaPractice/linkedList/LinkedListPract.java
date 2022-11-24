@@ -310,7 +310,23 @@ public class LinkedListPract {
         secondNode.val = temp;
         return head;
     }
+    public Node removeElements(Node head, int val) {
+       Node dummy = new Node(-1);
+       dummy.next = head;
+       Node prev = dummy;
+       Node curr = head;
+        while (curr!=null){
+            if(curr.val == val){
+                prev.next = curr.next;
+                curr = curr.next;
+            }else{
+                prev = curr;
+                curr = curr.next;
+            }
+        }
 
+        return head;
+    }
     private int getNodeSize(Node head) {
         if(head==null) return 0;
         int counter = 0;
