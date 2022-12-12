@@ -310,6 +310,21 @@ public class LinkedListPract {
         secondNode.val = temp;
         return head;
     }
+    public void deleteNode(Node node) {
+        Node dummy = new Node(-1);
+        dummy.next = node;
+        Node prev = dummy;
+        Node curr = node;
+        while (curr!=null){
+            if(curr.val == node.val){
+                prev.next = curr.next;
+                curr = curr.next;
+            }else{
+                prev = curr;
+                curr = curr.next;
+            }
+        }
+    }
     public Node removeElements(Node head, int val) {
        Node dummy = new Node(-1);
        dummy.next = head;
@@ -347,6 +362,20 @@ public class LinkedListPract {
         }
         head=slow;
         return slow;
+    }
+    public int getDecimalValue(Node head) {
+        String digits = getDigit(head);
+        return Integer.parseInt(digits,2);
+
+    }
+
+    private String getDigit(Node head) {
+        String s = "";
+        while (head!=null){
+            s+=head.val;
+            head = head.next;
+        }
+        return s;
     }
 
     public Node reverse(){

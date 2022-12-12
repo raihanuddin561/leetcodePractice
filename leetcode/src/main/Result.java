@@ -486,9 +486,13 @@ Expected
         solution189.rotate(arr,k);*/
         /*Solution70 solution70 = new Solution70();
         System.out.println(solution70.climbStairs(4));*/
-        Solution121 solution121 = new Solution121();
+       /* Solution121 solution121 = new Solution121();
         int[] arr = {1,4,2};
         //int[] arr = {7,1,5,3,6,4};
-        System.out.println(solution121.maxProfit(arr));
+        System.out.println(solution121.maxProfit(arr));*/
+        /*Solution345 solution345 = new Solution345();
+        solution345.reverseVowels("Ui");*/
+        Solution17 solution17 = new Solution17();
+        solution17.letterCombinations("23");
     }
 }

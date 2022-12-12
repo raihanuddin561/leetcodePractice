@@ -15,7 +15,9 @@ public class Solution17 {
         String s = "";
         getCombination(ch,0,s);
         return combination;*/
-        return pad("",digits);
+        List<String> l= pad("",digits);
+        System.out.println(l);
+        return l;
     }
 
     private void getCombination(char[] ch, int i, String s) {
@@ -43,7 +45,7 @@ public class Solution17 {
         int digit = up.charAt(0)-'0';
         List<String> res = new ArrayList<>();
         for(int i=(digit-1)*3;i<digit*3;i++){
-            char c=(char) ('a'+i);
+            char c=(char) ('a'+i-3);
             res.addAll(pad(p+c,up.substring(1)));
         }
         return res;
